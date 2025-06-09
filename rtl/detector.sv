@@ -1,4 +1,3 @@
-```systemverilog
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Module Name: detector
@@ -43,4 +42,3 @@ module detector(
     end
 
 endmodule
-```
