@@ -1,0 +1,48 @@
+```gitignore
+# Vivado generated files
+*.jou
+*.log
+*.pb
+*.wdb
+*.wcfg
+*.wlf
+vivado.jou
+vivado.log
+vivado_*.backup.jou
+vivado_*.backup.log
+
+# Simulation files
+work/
+transcript
+vsim.wlf
+modelsim.ini
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*~
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# Xilinx files
+*.bit
+*.ltx
+*.rpt
+*.dcp
+*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+```
