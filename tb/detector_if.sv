@@ -1,4 +1,3 @@
-```systemverilog
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Interface Name: detector_if
@@ -11,4 +10,3 @@ interface detector_if;
     logic a, b, c;      // Input signals
     logic [2:0] y;      // Output signals
 endinterface
-```
