@@ -5,6 +5,7 @@ A SystemVerilog implementation of a first-arrival signal detector that captures 
 ## Waveform Example
 
 The following waveform demonstrates the detector's behavior when A and C arrive simultaneously:
+
 ![Waveform Example](docs/waveform_example.jpg)
 
 **Key Points:**
@@ -49,23 +50,27 @@ The detector captures the **first** pattern it sees and ignores all subsequent i
 ## File Organization
 ```
 first-signal-detector/
-├── README.md                    # This file
+├── README.md                    # Project overview and documentation
+├── LICENSE                      # MIT License
+├── .gitignore                   # Git ignore rules
+├── .gitattributes              # Git attributes for line endings
 ├── rtl/
-│   └── detector.sv              # Main design file
+│   └── detector.sv              # Main design module
 ├── tb/
-│   ├── detector_tb.sv           # Testbench
-│   └── detector_if.sv           # Interface definition
+│   ├── detector_tb.sv           # Comprehensive testbench
+│   └── detector_if.sv           # SystemVerilog interface definition
 └── docs/
-    ├── design_spec.md           # Detailed design documentation
-    └── waveform_example.jpg     # Task Example Image
+    ├── design_spec.md           # Detailed design specification
+    └── waveform_example.jpg     # Timing diagram example
 ```
 
 ## Usage
 
 ### Vivado Simulation
 1. Open Vivado
-2. Source the simulation script: `source sim/vivado/run_sim.tcl`
-3. Run simulation: `run 1000ns`
+2. Add all source files from `rtl/` and `tb/` directories
+3. Set `detector_tb` as the top module for simulation
+4. Run simulation: `run 1000ns`
 
 ### Manual Compilation
 ```bash
@@ -73,7 +78,7 @@ first-signal-detector/
 vlog rtl/detector.sv tb/detector_if.sv tb/detector_tb.sv
 
 # Run simulation
-vsim -gui tb
+vsim -gui detector_tb
 
 # Add waves and run
 add wave -r /*
@@ -98,9 +103,8 @@ The testbench includes comprehensive verification:
 
 ## Author
 
-Asaf Kamber
+**Asaf Kamber**
 
 ## License
 
-MIT License
-```
+MIT License - see [LICENSE](LICENSE) file for details.

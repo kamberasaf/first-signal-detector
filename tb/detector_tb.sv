@@ -1,4 +1,3 @@
-```systemverilog
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Module Name: detector_tb
@@ -178,4 +177,3 @@ module detector_tb();
     endtask
     
 endmodule
-```
