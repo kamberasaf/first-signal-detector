@@ -1,4 +1,3 @@
-```markdown
 # First Signal Detector - Design Specification
 
 ## Overview
@@ -77,4 +76,3 @@ This document provides detailed design specifications for the first signal detec
 - Priority encoding option
 - Timeout mechanism for detection window
 - Multiple detection cycles with programmable reset
-```
